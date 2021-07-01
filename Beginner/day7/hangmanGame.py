@@ -1,4 +1,4 @@
-import replit
+# import replit
 import random
 from art import logo,stages
 import hangman_words
@@ -18,7 +18,7 @@ lives = 6
 is_game_over = False
 while not is_game_over:
     guess = input("Guess a Letter : ").lower()
-    replit.clear()
+    # replit.clear()
     if guess in display:
         print("You are already guess the letter "+guess)
     for position in range(word_length):

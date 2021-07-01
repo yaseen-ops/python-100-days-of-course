@@ -1,5 +1,5 @@
 from art import logo
-from replit import clear
+# from replit import clear
 
 print(logo)
 
@@ -30,5 +30,5 @@ while not is_bidding_end:
         is_bidding_end = True
         check_winner(bids)
     else:
-        clear()
+        print("Clear")
 

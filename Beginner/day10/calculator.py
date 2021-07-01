@@ -1,4 +1,4 @@
-from replit import clear
+# from replit import clear
 import art
 
 def add(n1, n2):
@@ -54,7 +54,7 @@ def calculator():
         if wish_to_continue == "y":
             num1 = answer
         else:
-            clear()
+            # clear()
             end_calculation = True
             # recursive function call to restart the calculation freshly when user doesn't want to continue
             calculator()
