@@ -2,6 +2,7 @@ import random
 from art import logo, vs
 from game_data import data
 
+
 def get_random_account():
     return random.choice(data)
 
