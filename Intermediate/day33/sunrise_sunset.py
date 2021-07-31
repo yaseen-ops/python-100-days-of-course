@@ -1,11 +1,13 @@
 import requests
 from datetime import datetime
 import smtplib
+from blahblah import get_secrets
+FILE = "C:/Users/yaseen/secrets/mail.txt"
 
 MY_LATITUDE = 8.669624
 MY_LONGITUDE = 77.589635
-MY_EMAIL = "smtplearn01@gmail.com"
-MY_PASSWORD = "zxcv@0987"
+MY_EMAIL = get_secrets(FILE)["EMAIL_ID"]
+MY_PASSWORD = get_secrets(FILE)["EMAIL_PASSWORD"]
 
 parameters = {
     "lat": MY_LATITUDE,

@@ -1,8 +1,11 @@
 import requests
 from datetime import datetime
+import os
+from blahblah import get_secrets
+FILE = "C:/Users/yaseen/secrets/nutritionix.txt"
 
-API_ID = "781bfd05"
-API_KEY = "d71d855ff0b645a66688650d5e6f89d1"
+API_ID = get_secrets(FILE)["API_ID"]
+API_KEY = get_secrets(FILE)["API_KEY"]
 GENDER = "male"
 WEIGHT = "73"
 HEIGHT = "164"

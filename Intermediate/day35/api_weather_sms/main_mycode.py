@@ -1,6 +1,8 @@
 import requests
+from blahblah import get_secrets
 
-API_KEY = "720f773533fdf5fe413ca07eae748e5c"
+FILE = "C:/Users/yaseen/secrets/weather_sms.text"
+API_KEY = get_secrets(FILE)["API_KEY"]
 MY_LATITUDE = 8.669624
 MY_LONGITUDE = 77.589635
 WEATHER_ENDPOINT = "https://api.openweathermap.org/data/2.5/onecall"

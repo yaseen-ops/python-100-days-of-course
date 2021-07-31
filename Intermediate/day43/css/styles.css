@@ -1,0 +1,26 @@
+/***Using Tag selectors ***/
+body {
+ background-color: DarkCyan;
+}
+hr {
+ border-style: none;
+ border-top-style: dotted;
+ border-color: LightSteelBlue;
+ border-width: 5px;
+ width: 7%;
+}
+/***Using ID selectors ***/
+#heading {
+ color: Purple;
+}
+/***Using Class selectors ***/
+.heading3 {
+ color: PeachPuff;
+}
+
+.hobbies-bg {
+ background-color: #BC8F8F;
+}
+.contacts-bg {
+ background-color: #BC8F8F;
+}

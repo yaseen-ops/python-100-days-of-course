@@ -1,8 +1,10 @@
 import requests
 from datetime import datetime
+from blahblah import get_secrets
+FILE = "C:/Users/yaseen/secrets/pixela.txt"
 
-USER_NAME = "bashops"
-API_TOKEN = "sdjf798u4lweu90so"
+USER_NAME = get_secrets(FILE)["USER_NAME"]
+API_TOKEN = get_secrets(FILE)["API_TOKEN"]
 
 PIXELA_ENDPOINT = "https://pixe.la/"
 USER_ENDPOINT = f"{PIXELA_ENDPOINT}/v1/users"

@@ -1,15 +1,17 @@
 import requests
 from twilio.rest import Client
 import os
+from blahblah import get_secrets
+FILE = "C:/Users/yaseen/secrets/weather_sms.text"
 
-API_KEY = "720f773533fdf5fe413ca07eae748e5c"
+API_KEY = get_secrets(FILE)["API_KEY"]
 MY_LATITUDE = 51.759050
 MY_LONGITUDE = 19.458600
 WEATHER_ENDPOINT = "https://api.openweathermap.org/data/2.5/onecall"
 
-account_sid = "AC8df83bdc3909bfc6a68e8bedecf13a62"
-# auth_token = "94665263f6d795d3332f34fdf4573d85"
-auth_token = os.environ.get("TWILIO_AUTH_TOKEN")
+account_sid = get_secrets(FILE)["ACCOUNT_SID"]
+auth_token = get_secrets(FILE)["AUTH_TOKEN"]
+# auth_token = os.environ.get("TWILIO_AUTH_TOKEN")
 
 parameters = {
     "lat": MY_LATITUDE,
