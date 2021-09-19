@@ -1,6 +1,6 @@
-from bs4 import BeautifulSoup
 import requests
 import spotipy
+from bs4 import BeautifulSoup
 from spotipy.oauth2 import SpotifyOAuth
 from blahblah import get_secrets
 
